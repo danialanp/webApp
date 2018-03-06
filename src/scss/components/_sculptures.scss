@@ -1,0 +1,47 @@
+.sculptures{
+    margin-top: 35px;
+    
+
+    .sculpt{
+        box-sizing: border-box;
+        width: calc(50% - 10px);
+        float: left;
+        margin: 10px 5px;
+        background: #e5e3e2;
+        height: 240px;        
+        max-height: 240px;
+        
+        
+
+        @include if-mobile-landscape{
+            width: calc(25% - 10px);
+        }
+
+        @include if-desktop{
+            width: calc(20% - 10px);
+        }
+
+        .img{
+            width: 100%;
+            transition: transform 0.2s ease-out;
+            &:hover{
+                transform: scale(1.05)
+            }
+        }
+
+        .titulobra{
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .descripcion{
+            margin-top: 3px;
+            font-size: 15px;
+        }
+    }
+
+
+
+
+
+}

@@ -1,0 +1,102 @@
+.total{
+    display: flex;
+    flex-direction: row;
+
+    
+    .frank{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        order: -1;
+        transition: transform 0.5s ease-out;
+           
+        
+        
+
+        &.second{
+            img{
+            display: block;
+            margin: auto;
+            width: 90%;
+            height:75%;
+            padding-top: 40px;
+            
+
+            @include if-mobile-landscape{
+                width: 80%;
+                height: 60%px;
+            }
+
+            @include if-tablet{
+                width: 90%;
+                height: 78%;
+                
+            }
+            
+            @include if-desktop{
+                width: 100%;
+                height: 100%;
+                padding-top: 55px;
+
+                
+            }
+           
+            
+            
+            }
+        }
+
+                
+    }
+
+
+
+
+}
+
+.walter{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    order: 1;
+    font-weight: bold;
+    font-family: $mainfont;
+    font-size:20px;
+
+    @include if-desktop{
+        padding-top: 120px;
+        font-weight: bold;
+        font-family: $mainfont;
+        font-size: 28px;
+    }
+}
+.white{
+    display: flex;
+    font-style: normal;
+    padding-top: 50px;
+    align-items: center;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    justify-content: space-around;
+    flex-direction: column;
+    order: 2;
+
+    @include if-desktop{
+        padding-top: 50px;
+        line-height: 1.9em;
+        font-family: $mainfont;
+        
+    }
+
+    
+}
+
+.obbad{
+    font-family: $mainfont;
+    font-style: italic;
+}

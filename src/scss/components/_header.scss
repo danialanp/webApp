@@ -1,0 +1,105 @@
+.webheader{
+    box-sizing: border-box;
+    background: fade-out(white, 0.2);
+    color: $font-color;
+    position: fixed;
+    padding: 4px;
+    top: 0;
+    width: 100%;
+
+    &:hover{
+        background: white;
+        transition: 0.2s;
+    }
+            
+    .headerimgs{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: $imgs-margin-right;
+        
+        
+        .facebook{
+            margin-top: $imgs-margin-top;
+            margin-right: 5px;
+            width: 15px;
+            height: 15px;
+        }
+        .twitter{
+            margin-top: $imgs-margin-top;
+            width: 15px;
+            height: 15px;
+        }
+
+        @include if-mobile-landscape {
+            margin-right: $imgs-margin-right + 80px;
+            }
+        @include if-tablet {
+            margin-right: $imgs-margin-right + 160px;
+            }
+        @include if-desktop {
+            margin-right: $imgs-margin-right + 370px;
+        }
+                
+    }
+
+    .title{
+        font-size: $titulo;
+        margin-top: $title-margin-top;
+        margin-left: $title-margin-left;
+        margin-bottom: $title-margin-bottom;
+        font-weight: bold;
+
+        @include if-mobile-landscape {
+            font-size: $titulo + 2px;
+        }
+
+        @include if-tablet {
+            font-size: $titulo + 2px;
+        }
+    }
+
+    .rightheader{
+        color: $font-color;
+        
+        .signup{
+            float: right;
+            margin-top: $signup-margin-top;
+            margin-right: $signup-margin-right;
+            font-size: $size-menu;
+            font-family: $mainfont;
+
+            @include if-mobile-landscape {
+                font-size: $size-menu + 3px;
+                margin-right: $signup-margin-right + 40px;
+                margin-top: $signup-margin-top - 3px;
+            }
+
+            @include if-tablet {
+                font-size: $size-menu + 5px;
+                margin-right: $signup-margin-right + 80px;
+                margin-top: $signup-margin-top - 3px;
+                
+            }
+            @include if-desktop {
+                font-size: $size-menu + 5px;
+                margin-right: $signup-margin-right + 220px;
+                margin-top: $signup-margin-top - 3px;
+                
+            }
+        }
+
+        #search {
+            margin-top: $search-margin-top;
+            margin-left: $search-margin-left;
+            margin-right: $search-margin-right;
+            float: right;
+            width: 12%;
+
+            @include if-mobile-landscape {
+                width: 12%;
+            }
+        }
+
+    }
+}
+

@@ -1,0 +1,42 @@
+.webfooter{
+    box-sizing: border-box;
+    background: fade-out(white, 0.2);
+    color: $font-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+
+    a:hover{
+        color: green;
+    }
+
+    
+    .titlefooter{
+        font-family: $mainfont;
+        font-size: $size-footer-title;
+        font-weight: bold;
+
+    }
+
+    .linkfooter{
+        font-family: $mainfont;
+        font-size: $size-footer-link;       
+        padding-left: 20px;
+
+        
+    }
+
+        @include if-mobile-landscape {
+            font-size: $titulo + 2px;
+        }
+
+        @include if-tablet {
+            font-size: $titulo + 2px;
+        }
+    }
+
+
+
+
